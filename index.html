@@ -1,0 +1,791 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Parazax</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/@media.css"> 
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-6 logo_holder">
+						<span class="logo"></span>
+						<span class="slogan"></span>
+					</div>
+					<div class="col-lg-7 nav_holder">
+						<ul class="header_nav">
+							<li>
+								<a href="#expert">Мнение эксперта</a>
+							</li>
+							<li>
+								<a href="#result">Результаты исследований</a>
+							</li>
+							<li>
+								<a href="#composition">Состав</a>
+							</li>
+							<li>
+								<a href="#reviews">Отзывы</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-6 header_button">
+						<a href="#order" class="button header_btn">ЗАКАЗАТЬ</a>
+							<span class="basket for_768"></span>
+						<div class="menu for_768">
+							<span class="menu_icon"></span>
+							<div class="menu_links">
+								<a class="menu_links-item" href="#expert">Мнение эксперта</a>
+								<a class="menu_links-item" href="#result">Результаты исследований</a>
+								<a class="menu_links-item" href="#composition">Состав</a>
+								<a class="menu_links-item" href="#reviews">Отзывы</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="order">
+				<div class="container-fluid">
+					<div class="row justify-content-lg-end">
+						<div class="bg"></div>
+						<div class="col-lg-3 attributes attributes_forbig col-sm-4 col-12">
+							<span class="img img1"></span>
+							<span class="text">100% натуральный </span>
+						</div>
+						<div class="col-lg-3 attributes attributes_forbig col-sm-4 col-12">
+							<span class="img img2"></span>
+							<span class="text">Выбор экспертов 2017</span>
+						</div>
+						<div class="col-lg-3 attributes attributes_forbig col-sm-4 col-12">
+							<span class="img img3"></span>
+							<span class="text">Не имеет аналогов в Европе</span>
+						</div>
+						<div class="col-lg-7 short_info">
+							<div class="row">
+								<div class="product col-12">
+									<img src="img/product_top.png" alt="" class="for_big">
+									<img src="img/product_top_768.png" alt="" class="for_768">
+								</div>
+								<div class="col-lg-4 col-sm-5 col-12 short_inf_item short_inf_item1">
+									<span class="img img1"></span>
+									<span class="text">Убивает паразитов  и устраняет продукты их распада</span>
+								</div>
+								<div class="col-lg-4 col-sm-5 col-12 short_inf_item">
+									<span class="img img2"></span>
+									<span class="text">Безопасно выводит паразитов из органов</span>
+								</div>
+								<div class="col-lg-4 col-sm-5 col-12 short_inf_item">
+									<span class="img img3"></span>
+									<span class="text">Восстанавливает поврежденные органы</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5 order_info">
+							<div class="row">
+								<div class="course">
+									<span class="h1">Средство от паразитов</span>
+									<span class="h2">Очищает и восстанавливает поврежденные органы</span>
+									<span class="h3">за 1 курс!</span>
+								</div>
+								<div class="form_holder">
+									<div class="sale">
+										<div class="sale_text">
+											<span>Скидка -50 %</span>
+											<span class="finish">заканчивается  через</span>
+										</div>
+										<div class="timer">
+											<div class="countdown-container"></div>
+											<div class="time_under">
+												<span>DAYS</span>
+												<span>Hours</span>
+												<span>Min</span>
+												<span class="sec">sec</span>
+											</div>
+										</div>
+									</div>
+									<div class="clearix"></div>
+									<div class="price">
+										<div class="old_price">
+											<span class="wv_currency">&euro;</span>
+											<span class="wv_old-price">98<sup>.00</sup></span>
+										</div>
+										<div class="new_price">
+											<span class="wv_currency">&euro;</span>
+											<span class="wv_new-price">49<sup>.00</sup></span>
+										</div>
+									</div>
+									<form action="order.php" method="POST" class="wv_order-form">
+										<span style="visibility: hidden; height: 1px">Страна</span>
+										<div class="select_holder">
+											<select id="id_country" name="id_country" class="country_select" style="visibility: hidden; height: 1px">
+												<option value="at">Austria</option>
+												<option value="it">Italy</option>
+												<option value="es">Spain</option>
+												<option value="fr">France</option>
+												<option value="lv">Latvia</option>
+												<option value="ee">Estonia</option>
+												<option value="lt">Lithuania</option>
+												<option value="de">Germany</option>
+												<option value="pl">Poland</option>
+												<option value="hu">Hungary</option>
+												<option value="bg">Bulgaria</option>
+											</select> 
+										</div>
+										<span>Ваше Имя</span>
+										<input name="name" type="text" class="wv_name" required>
+										<span>Телефон</span>
+										<input name="phone" type="text" class="wv_phone" required>
+
+										<input name="ym" type="hidden" class="" value="default">
+										<input name="utm_source" type="hidden" class="">
+										<input name="utm_medium" type="hidden" class="">
+										<input name="utm_campaign" type="hidden" class="">
+										<input name="utm_content" type="hidden" class="">
+										<input name="utm_term" type="hidden" class="">
+										<input name="referer" type="hidden" class="" value="default">
+										<input name="guid" type="hidden" class="">
+										<input name="first_guid" type="hidden" class="">
+										<input name="landing_id" type="hidden" class="">
+										<input name="prelanding_id" type="hidden" class="">
+										<input name="offer_id" type="hidden" class="">
+										<input name="url" type="hidden" class="">
+
+										<button class="button form_btn">ЗАКАЗАТЬ</button>
+										<span class="rest">
+											осталось <b>46</b> упаковок
+										</span>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="suitable col-lg-7">
+							<span>Идеально подходит как для мужчин, так и для женщин</span>
+						</div>
+						<div class="col-lg-3 attributes attributes_for320 col-sm-4 col-12">
+							<span class="img img1"></span>
+							<span class="text">100% натуральный </span>
+						</div>
+						<div class="col-lg-3 attributes attributes_for320 col-sm-4 col-12">
+							<span class="img img2"></span>
+							<span class="text">Выбор экспертов 2017</span>
+						</div>
+						<div class="col-lg-3 attributes attributes_for320 col-sm-4 col-12">
+							<span class="img img3"></span>
+							<span class="text">Не имеет аналогов в Европе</span>
+						</div>
+						<div class="policy col-lg-5">
+							<span class="policy_img"></span>
+							<span class="policy_item policy_item1">Ваши данные под защитой</span>
+							<span class="policy_item policy_item2">Курс подбирается индивидуально</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="symptoms">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="bg"></div>
+						<div class="col-lg-4 symptoms_img">
+							<img src="img/bg_img_2.png" alt="">
+						</div>
+						<div class="col-lg-8 symptoms_text">
+							<div class="row">
+								<span class="h3 col-12">Каждый 2-ой человек на планете заражен паразитами</span>
+								<span class="check col-12">Проверьте себя на эти симптомы</span>
+								<ul class="symptoms_list col-sm-6 symptoms_list1">
+									<li>
+										<span class="img"></span>
+										<span class="text">Снижение иммунитета</span>
+									</li>
+									<li>
+										<span class="img"></span>
+										<span class="text">Высыпания на коже</span>
+									</li>
+									<li>
+										<span class="img"></span>
+										<span class="text">Постоянная усталость</span>
+									</li>
+									<li>
+										<span class="img"></span>
+										<span class="text">Частые простуды</span>
+									</li>
+									<li>
+										<span class="img"></span>
+										<span class="text">Изменение массы тела</span>
+									</li>
+								</ul>
+								<ul class="symptoms_list col-sm-6 symptoms_list2">
+									<li>
+										<span class="img"></span>
+										<span class="text">Проблемы со сном</span>
+									</li>
+									<li>
+										<span class="img"></span>
+										<span class="text">Расстройства желудка</span>
+									</li>
+									<li>
+										<span class="img"></span>
+										<span class="text">кишечника</span>
+									</li>
+									<li>
+										<span class="img"></span>
+										<span class="text">Частые смены настроения</span>
+									</li>
+									<li>
+										<span class="img"></span>
+										<span class="text">Дисбактериоз</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="change">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="bg"></div>
+						<span class="h3 col-12">
+							Представьте, как изменится ваша жизнь после курса PARAZAX COMPLEX!
+						</span>
+						<div class="col-lg-4 col-sm-3 col-12 change_img">
+							<img src="img/change_img1.png" alt="">
+						</div>
+						<ul class="col-lg-8 col-sm-9 col-12 change_list">
+							<li>
+								<span class="img"></span>
+								<span class="text">Вы перестанете испытывать постоянное чувство усталости и слабости.</span>
+							</li>
+							<li>
+								<span class="img"></span>
+								<span class="text">Вы перестанете мучиться от бессонницы. Вы снова будете прекрасно спать.</span>
+							</li>
+							<li>
+								<span class="img"></span>
+								<span class="text">Вы наконец-то избавитесь от проблем с кожей и аллергии.</span>
+							</li>
+							<li>
+								<span class="img"></span>
+								<span class="text">Вы больше не будете испытывать проблемы с пищеварением.</span>
+							</li>
+							<li class="last_child">
+								<span class="img"></span>
+								<span class="text">
+									Паразиты навсегда исчезнут из вашей жизни. А также болезни, которые они вызывали. 
+									Вы и ваши близкие снова будете здоровы! 
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="expert">
+				<div id="expert"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="bg"></div>
+						<div class="col-sm-6 expert_text">
+							<span class="h3">Мнение эксперта</span>
+							<span class="h4">“PARAZAX COMPLEX не только очищает, но и восстанавливает поврежденные органы”</span>
+							<p>
+								“Антипаразитарное средство PARAZAX COMPLEX не только убивает все виды паразитов и устраняет продукты
+								их распада, но и восстанавливает поврежденные ими органы. Средство не может оказать никакого вреда 
+								здоровью человека, так как все его компоненты натуральные и прошли исследования в лучших фармацевтических
+								лабораториях Франции”.
+							</p>
+							<span class="name">ФИО эксперта,</span>
+							<span class="skill">эксперт в области паразитологии</span>
+						</div>
+						<div class="col-sm-6 expert_photo">
+							<img src="img/doc.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="result">
+				<div id="result"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<span class="h3 col-12">Результаты клинических исследований</span>
+						<span class="text col-12">
+							По результатам исследований 98% людей, которые принимали PARAZAX COMPLEX, удалось 
+							полностью очистить свой организм от паразитов и укрепить свою иммунную систему
+						</span>
+						<div class="result_img col-12">
+							<img src="img/bg_img_5.png" alt="">
+						</div>
+						<div class="col-sm-4 col-12 result_item">
+							<img src="img/result1_320.png" alt="" class="for_320">
+							<p>
+								Формула PARAZAX COMPLEX создавалась в течение 6 лет исследований с привлечением независимых 
+								фармацевтических лабораторий Франции.
+							</p>
+						</div>
+						<div class="col-sm-4 col-12 result_item">
+							<img src="img/result2_320.png" alt="" class="for_320">
+							<p>
+								Для производства средства создана лаборатория, отвечающая всем стандартам качества ЕС,
+								использованы современные технологии и лучшие ингредиенты. 
+							</p>
+						</div>
+						<div class="col-sm-4 col-12 result_item">
+							<img src="img/result3_320.png" alt="" class="for_320">
+							<p>
+								4 года шла разработка программного обеспечения для подбора инновационной формулы 
+								на основе результатов тестов клиентов.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="composition">
+				<div id="composition"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="bg"></div>
+						<div class="lign_top"></div>
+						<span class="h3 col-12">Что такое PARAZAX COMPLEX?</span>
+						<p class="col-12">
+							PARAZAX COMPLEX — натуральный комплекс веществ для устранения паразитов. Природные компоненты 
+							средства способствуют безопасному устранению всех типов гельминтов и продуктов их распада.Также 
+							компоненты PARAZAX COMPLEX способствуют быстрому восстановлению поврежденных гельминтами органов
+							в результате паразитарного токсикоза и нормализации обменных процессов. 
+						</p>
+						<div class="col-lg-3 col-sm-6 col-12 composition_item">
+							<img src="img/complex1.png" alt="">
+							<span class="name">Гвоздика</span>
+							<span class="text">
+								Убивает все виды паразитов. Противопаразитарный эффект гвоздики проявляется в крови, мозге, глазах 
+								и нервной системе.
+							</span>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-12 composition_item">
+							<img src="img/complex2.png" alt="">
+							<span class="name">Хвощ полевой</span>
+							<span class="text">
+								Оказывает сильное действие на паразитов в сердце, желудке, органах дыхания, 
+								печени и мочевыделительной системе.
+							</span>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-12 composition_item">
+							<img src="img/complex3.png" alt="">
+							<span class="name">Семена расторопши  </span>
+							<span class="text">
+								Обладают гепатопротекторным действием, проявляют антиоксидантные свойства, противостоят проникновению 
+								токсинов и ядов.  
+							</span>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-12 composition_item">
+							<img src="img/complex4.png" alt="">
+							<span class="name">Листья папайи </span>
+							<span class="text">
+								Издавна известное и эффективное средство для регенерации поврежденных органов после воздействия
+								паразитов и продуктов их распада. 
+							</span>
+						</div>
+						<span class="no_analog col-12">Не имеет аналогов в Европе <br>Отвечает стандартам качества ЕС</span>
+						<div class="composition_btn_holder col-12">
+							<a href="#order" class="button composition_btn">ЗАКАЗАТЬ</a>
+						</div>
+						<div class="lign_bottom col-12"></div>
+					</div>
+				</div>
+			</section>
+			<section class="why">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="bg col-12"></div>
+						<span class="h3 col-12">Почему PARAZAX COMPLEX?</span>
+						<div class="product col-12">
+							<img src="img/product_center.png" alt="" class="for_320">
+							<img src="img/bg_img_6.png" alt="" class="for_big">
+						</div>
+						<div class="col-sm-6 col-12 why_item why_item1">
+							<img src="img/why1.png" alt="" class="for_320">
+							<span class="num for_big">01</span>
+							<span class="text">
+								PARAZAX COMPLEX прошел регистрацию и процедуру сертификации в странах Евросоюза, подтверждающую его 
+								соответствие европейским стандартам качества.
+							</span>
+						</div>
+						<div class="col-sm-6 col-12 why_item why_item3">
+							<img src="img/why3.png" alt="" class="for_320">
+							<span class="num for_big">03</span>
+							<span class="text">
+								 Средство состоит исключительно из природных компонентов, собранных в экологически чистых местах мира.
+							</span>
+						</div>
+						<div class="col-sm-6 col-12 why_item why_item2">
+							<img src="img/why2.png" alt="" class="for_320">
+							<span class="num for_big">02</span>
+							<span class="text">
+								Тесты на экологичность и токсичность показали, что средство абсолютно безопасно для здоровья человека.
+							</span>
+						</div>
+						<div class="col-sm-6 col-12 why_item why_item4">
+							<img src="img/why4.png" alt="" class="for_320">
+							<span class="num for_big">04</span>
+							<span class="text">
+								PARAZAX COMPLEX полностью натуральное средство для устранения паразитов. 
+								Поэтому его можно принимать всей семьей.  
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div id="reviews"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="lign_top col-12"></div>
+						<span class="h3 col-12">Реальные отзывы и результаты</span>
+						<div class="col-sm-4 review_item">
+							<img src="img/review1.png" alt="">
+							<p>
+								Я периодически забывала мыть руки, когда приходила с улицы. А это же постоянный контакт с деньгами,
+								другими людьми. Транспорт опять же. Потом я стала чувствовать недомогание и часто болеть. Решила 
+								сходить к врачу на обследование. Я была просто в шоке - откуда у меня паразиты? Но врач успокоил 
+								меня и порекомендовал мне новое средство Parazax Complex. Через 3 месяца паразитов как и не бывало)
+							</p>
+							<span class="name">Полет, 28 лет</span>
+							<span class="city">Париж</span>
+						</div>
+						<div class="col-sm-4 review_item">
+							<img src="img/review2.png" alt="">
+							<p>
+								У меня дома две кошки. А они бегают, где попало. Особо не уследишь. Хоть я и слежу за ними, но не 
+								всегда удается. А потом я покрылась какой-то сыпью, начало все чесаться. Мазями всякими мазала, но 
+								толку особо не было. Решила посоветоваться с подругой. Она сказала, что у нее такое было и посоветовала
+								мне Parazax Complex от паразитов. Я еще подумала: причем тут паразиты. Но пить капсулы все-таки начала.
+								И действительно эффект есть, причем достаточно быстрый.
+							</p>
+							<span class="name">Сандра, 37 лет</span>
+							<span class="city">Милан</span>
+						</div>
+						<div class="col-sm-4 review_item">
+							<img src="img/review3.png" alt="">
+							<p>
+								Мы с женой ездили в Таиланд разнообразить свой досуг и постоянно там питались местной пищей.
+								Отдыхом остались довольны. Все понравилось. Но, когда вернулись домой, у обоих начались проблемы с 
+								желудком и кишечником. Ничего не помогало. И слабость ужасная. Даже на работу не могли ходить. Выяснилось, 
+								что это паразиты. Нашли в интернете средство Parazax Complex. Изучили сайт, внушило доверие. Заказали. 
+								Вот сейчас проходим курсовой прием. Довольны результатом! Будем проходить курс до конца.   
+							</p>
+							<span class="name">Герберт, 46 лет</span>
+							<span class="city">Мюнхен</span>
+						</div>
+						<div class="col-12">
+							<a href="#order" class="review_btn button">ЗАКАЗАТЬ</a>
+						</div>
+						<div class="lign_bottom col-12"></div>
+					</div>
+				</div>
+			</section>
+			<section class="how_use">
+				<div class="container-fluid">
+					<div class="row">
+						<span class="h3 col-12">Как принимать PARAZAX COMPLEX?</span>
+						<div class="col-sm-4 how_use_item how_use_item_before">
+							<img src="img/how_use.png" alt="">
+							<span class="text">1 капсула 3 раза<br>в день</span>
+						</div>
+						<div class="col-sm-4 how_use_item how_use_item_before">
+							<img src="img/how_use2.png" alt="">
+							<span class="text">Во время еды,<br>запивая водой</span>
+						</div>
+						<div class="col-sm-4 how_use_item">
+							<img src="img/how_use3.png" alt="">
+							<span class="text">Принимать непрерывным<br>курсом</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="how_get">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="bg"></div>
+						<span class="h3 col-12">Как получить PARAZAX COMPLEX?</span>
+						<div class="col-sm-3 how_get_item how_get_item_before">
+							<img src="img/how_get1.png" alt="">
+							<span class="text">Вы оставляете заявку<br>на нашем сайте</span>
+						</div>
+						<div class="col-sm-3 how_get_item how_get_item_before">
+							<img src="img/how_get2.png" alt="">
+							<span class="text">Наш специалист<br>связывается с вами</span>
+						</div>
+						<div class="col-sm-3 how_get_item how_get_item_before">
+							<img src="img/how_get3.png" alt="">
+							<span class="text">Мы отправляем<br>ваш заказ</span>
+						</div>
+						<div class="col-sm-3 how_get_item">
+							<img src="img/how_get4.png" alt="">
+							<span class="text">Вы оплачиваете заказ<br>только после получения</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="order">
+				<div id="order"></div>
+				<div class="container-fluid">
+					<div class="row justify-content-lg-center">
+						<div class="bg"></div>
+						<div class="col-lg-7 short_info">
+							<div class="row">
+								<div class="product col-12">
+									<img src="img/product_top.png" alt="" class="for_big">
+									<img src="img/product_top_768.png" alt="" class="for_768">
+								</div>
+								<div class="col-lg-4 col-sm-5 col-12 short_inf_item">
+									<span class="img img1"></span>
+									<span class="text">Убивает паразитов  и устраняет продукты их распада</span>
+								</div>
+								<div class="col-lg-4 col-sm-5 col-12 short_inf_item">
+									<span class="img img2"></span>
+									<span class="text">Безопасно выводит паразитов из органов</span>
+								</div>
+								<div class="col-lg-4 col-sm-5 col-12 short_inf_item">
+									<span class="img img3"></span>
+									<span class="text">Восстанавливает поврежденные органы</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5 order_info">
+							<div class="row">
+								<span class="footer_logo col-12"></span>
+								<div class="course">
+									<span class="h1">Средство от паразитов</span>
+									<span class="h2">Очищает и восстанавливает поврежденные органы</span>
+									<span class="h3">за 1 курс!</span>
+								</div>
+								<div class="form_holder">
+									<div class="sale">
+										<div class="sale_text">
+											<span>Скидка -50 %</span>
+											<span class="finish">заканчивается  через</span>
+										</div>
+										<div class="timer">
+											<div class="time_under">
+												<span>DAYS</span>
+												<span>Hours</span>
+												<span>Min</span>
+												<span class="sec">sec</span>
+											</div>
+											<div class="countdown-container"></div>
+										</div>
+									</div>
+									<div class="clearix"></div>
+									<div class="price">
+										<div class="old_price">
+											<span class="wv_currency">&euro;</span>
+											<span class="wv_old-price">98<sup>.00</sup></span>
+										</div>
+										<div class="new_price">
+											<span class="wv_currency">&euro;</span>
+											<span class="wv_new-price">49<sup>.00</sup></span>
+										</div>
+									</div>
+									<form action="order.php" method="POST" class="wv_order-form">
+										<span style="visibility: hidden; height: 1px">Страна</span>
+										<div class="select_holder">
+											<select id="id_country" name="id_country" class="country_select" style="visibility: hidden; height: 1px">
+												<option value="at">Austria</option>
+												<option value="it">Italy</option>
+												<option value="es">Spain</option>
+												<option value="fr">France</option>
+												<option value="lv">Latvia</option>
+												<option value="ee">Estonia</option>
+												<option value="lt">Lithuania</option>
+												<option value="de">Germany</option>
+												<option value="pl">Poland</option>
+												<option value="hu">Hungary</option>
+												<option value="bg">Bulgaria</option>
+											</select> 
+										</div>
+										<span>Ваше Имя</span>
+										<input name="name" type="text" class="wv_name" required>
+										<span>Телефон</span>
+										<input name="phone" type="text" class="wv_phone" required>
+
+										<input name="ym" type="hidden" class="" value="default">
+										<input name="utm_source" type="hidden" class="">
+										<input name="utm_medium" type="hidden" class="">
+										<input name="utm_campaign" type="hidden" class="">
+										<input name="utm_content" type="hidden" class="">
+										<input name="utm_term" type="hidden" class="">
+										<input name="referer" type="hidden" class="" value="default">
+										<input name="guid" type="hidden" class="">
+										<input name="first_guid" type="hidden" class="">
+										<input name="landing_id" type="hidden" class="">
+										<input name="prelanding_id" type="hidden" class="">
+										<input name="offer_id" type="hidden" class="">
+										<input name="url" type="hidden" class="">
+
+										<button class="button form_btn">ЗАКАЗАТЬ</button>
+										<span class="rest">
+											осталось <b>46</b> упаковок
+										</span>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="suitable col-lg-7">
+							<span>Идеально подходит как для мужчин, так и для женщин</span>
+						</div>
+						<div class="policy col-lg-5">
+							<span class="policy_img"></span>
+							<span class="policy_item policy_item1">Ваши данные под защитой</span>
+							<span class="policy_item policy_item2">Курс подбирается индивидуально</span>
+						</div>
+						<div class="col-lg-3 attributes col-sm-4 col-12">
+							<span class="img img1"></span>
+							<span class="text">100% натуральный </span>
+						</div>
+						<div class="col-lg-3 attributes col-sm-4 col-12">
+							<span class="img img2"></span>
+							<span class="text">Выбор экспертов 2017</span>
+						</div>
+						<div class="col-lg-3 attributes col-sm-4 col-12">
+							<span class="img img3"></span>
+							<span class="text">Не имеет аналогов в Европе</span>
+						</div>
+						<span class="polisy_plus col-12">Нажимая кнопку Заказать вы даёте своё согласие на обработку персональных данных</span>
+					</div>
+				</div>
+			</div>
+			<div class="order_mobil">
+				<div id="order"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<span class="footer_logo col-12"></span>
+						<div class="course col-12">
+							<span class="h1">Средство от паразитов</span>
+							<span class="h2">Очищает и восстанавливает поврежденные органы</span>
+							<span class="h3">за 1 курс!</span>
+						</div>
+						<div class="col-12 footer_img">
+							<img src="img/footer_img.png" alt="">
+						</div>
+						<div class="col-lg-4 col-sm-5 col-12 short_inf_item">
+							<span class="img img1"></span>
+							<span class="text">Убивает паразитов  и устраняет продукты их распада</span>
+						</div>
+						<div class="col-lg-4 col-sm-5 col-12 short_inf_item">
+							<span class="img img2"></span>
+							<span class="text">Безопасно выводит паразитов из органов</span>
+						</div>
+						<div class="col-lg-4 col-sm-5 col-12 short_inf_item">
+							<span class="img img3"></span>
+							<span class="text">Восстанавливает поврежденные органы</span>
+						</div>
+						<span class="col-12 suit">Идеально подходит как для мужчин, так и для женщин</span>
+						<div class="attributes col-12">
+							<span class="img img1"></span>
+							<span class="text">100% натуральный </span>
+						</div>
+						<div class="attributes col-12">
+							<span class="img img2"></span>
+							<span class="text">Выбор экспертов 2017</span>
+						</div>
+						<div class="attributes col-12">
+							<span class="img img3"></span>
+							<span class="text">Не имеет аналогов в Европе</span>
+						</div>
+						<div class="form_holder">
+							<div class="sale_text">
+								<span>Скидка -50 %</span>
+								<span class="finish">заканчивается  через</span>
+							</div>
+							<div class="timer">
+								<div class="time_under">
+									<span>DAYS</span>
+									<span>Hours</span>
+									<span>Min</span>
+									<span class="sec">sec</span>
+								</div>
+								<div class="countdown-container"></div>
+							</div>
+							<form action="order.php" method="POST" class="wv_order-form">
+								<span style="visibility: hidden; height: 1px">Страна</span>
+								<div class="select_holder">
+									<select id="id_country" name="id_country" class="country_select" style="visibility: hidden; height: 1px">
+										<option value="at">Austria</option>
+										<option value="it">Italy</option>
+										<option value="es">Spain</option>
+										<option value="fr">France</option>
+										<option value="lv">Latvia</option>
+										<option value="ee">Estonia</option>
+										<option value="lt">Lithuania</option>
+										<option value="de">Germany</option>
+										<option value="pl">Poland</option>
+										<option value="hu">Hungary</option>
+										<option value="bg">Bulgaria</option>
+									</select> 
+								</div>
+								<span>Ваше Имя</span>
+								<input name="name" type="text" class="wv_name" required>
+								<span>Телефон</span>
+								<input name="phone" type="text" class="wv_phone" required>
+
+								<input name="ym" type="hidden" class="" value="default">
+								<input name="utm_source" type="hidden" class="">
+								<input name="utm_medium" type="hidden" class="">
+								<input name="utm_campaign" type="hidden" class="">
+								<input name="utm_content" type="hidden" class="">
+								<input name="utm_term" type="hidden" class="">
+								<input name="referer" type="hidden" class="" value="default">
+								<input name="guid" type="hidden" class="">
+								<input name="first_guid" type="hidden" class="">
+								<input name="landing_id" type="hidden" class="">
+								<input name="prelanding_id" type="hidden" class="">
+								<input name="offer_id" type="hidden" class="">
+								<input name="url" type="hidden" class="">
+
+								<span class="rest">
+									осталось <b>46</b> упаковок
+								</span>
+								<span class="policy_img"></span>
+								<span class="policy_item policy_item1">Ваши данные под защитой</span>
+								<div class="bg">
+									<div class="sale">
+										<img src="img/product_footer.png" alt="">
+										<span>Скидка -50%</span>
+									</div>
+									<div class="price">
+										<div class="old_price">
+											<span class="wv_currency">&euro;</span>
+											<span class="wv_old-price">98<sup>00</sup></span>
+										</div>
+										<div class="new_price">
+											<span class="wv_currency">&euro;</span>
+											<span class="wv_new-price">49<sup>00</sup></span>
+										</div>
+									</div>
+									<button class="button form_btn">ЗАКАЗАТЬ</button>
+									<span class="curs">Курс подбирается индивидуально</span>
+									<span class="polisy_plus">Нажимая кнопку Заказать вы даёте своё согласие на обработку персональных данных</span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.2.0.min.js"></script>
+ 	<script src="js/bootstrap.min.js"></script>
+ 	<script src="js/jquery.countdown.min.js"></script>
+ 	<script src="js/script.js"></script>
+ 	<noscript><img src="//tracker.webvork.ru/pixel.php?offer_id=1&landing_id=1" alt=""></noscript>
+ 	<script src="js/webvork.js"></script>
+</body>
+</html>
